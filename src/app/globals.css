@@ -1,6 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap');
+
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "poppins", sans-serif;
+}
 
 :root {
   --foreground-rgb: 0, 0, 0;
@@ -18,10 +28,13 @@
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  background: #1F1F1F;
 }
+
+
+/* Custom styles */
+
+.hero {
+  @apply flex lg:flex-row flex-col relative z-0 max-w-[1440px] mx-auto;
+}
+
